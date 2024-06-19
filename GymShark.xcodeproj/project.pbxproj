@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93086C2E2C223D4300474DFF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93086C2D2C223D4300474DFF /* SignUpView.swift */; };
 		936566E72C1FAC0700E6A53D /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 936566E62C1FAC0700E6A53D /* Montserrat-Bold.ttf */; };
 		936566E92C1FAC1100E6A53D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 936566E82C1FAC1100E6A53D /* Roboto-Regular.ttf */; };
 		936566EB2C1FACE400E6A53D /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 936566EA2C1FACE400E6A53D /* Montserrat-Black.ttf */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93086C2D2C223D4300474DFF /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		936566E62C1FAC0700E6A53D /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		936566E82C1FAC1100E6A53D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		936566EA2C1FACE400E6A53D /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				93FED30D2C1F86340041146B /* ContentView.swift */,
 				93FED3192C1F86770041146B /* StartView.swift */,
 				938C91CD2C20AC1200F5DF62 /* LoginView.swift */,
+				93086C2D2C223D4300474DFF /* SignUpView.swift */,
 				93FED30F2C1F86370041146B /* Assets.xcassets */,
 				93FED3112C1F86370041146B /* Preview Content */,
 			);
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93FED31A2C1F86770041146B /* StartView.swift in Sources */,
+				93086C2E2C223D4300474DFF /* SignUpView.swift in Sources */,
 				93FED30E2C1F86340041146B /* ContentView.swift in Sources */,
 				938C91CE2C20AC1200F5DF62 /* LoginView.swift in Sources */,
 				93FED30C2C1F86340041146B /* GymSharkApp.swift in Sources */,

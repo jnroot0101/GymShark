@@ -24,7 +24,7 @@ struct StartView: View {
                         .font(.custom("Bebas Neue", size: 40))
                         .frame(maxHeight: 200)
                     
-                    VStack(spacing: 25) {
+                    VStack(spacing: 20) {
                         Text("TRACK YOUR PROGRESS")
                             .font(.custom("Montserrat", size: 18))
                         
@@ -35,17 +35,19 @@ struct StartView: View {
                     Spacer()
                     
                     HStack(spacing: 50) {
-                            Button("SIGN UP") {
-                                //
-                            }
+                        NavigationLink(destination: {
+                            SignUpView()
+                        }, label: {
+                            Text("SIGN UP")
+                        })
                         
                         Text("|")
-                        
-//                        NavigationLink(destination: LoginView()) {
-                            Button("LOG IN") {
-                                print("test")
-                            }
-//                        }
+
+                        NavigationLink(destination: {
+                            LoginView()
+                        }, label: {
+                            Text("LOG IN")
+                        })
                     }
                     .font(.custom("Montserrat", size: 16))
 
@@ -61,5 +63,7 @@ struct StartView: View {
 }
 
 #Preview {
-    StartView()
+    NavigationStack {
+        StartView()
+    }
 }
