@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct SignUpView: View {
+    @State private var firstName: String = ""
+    @State private var lastName: String = ""
     @State private var email: String = ""
+    @State private var dateOfBirth: Date = Date()
     @State private var password: String = ""
     @State private var isChecked: Bool = false
     
@@ -36,7 +39,7 @@ struct SignUpView: View {
                 VStack(alignment: .leading) {
                     Text("FIRST NAME")
                         .fontWeight(.bold)
-                    TextField("", text: $email)
+                    TextField("", text: $firstName)
                         .font(.system(size: 12))
                         .fontWeight(.none)
                         .frame(height: 30)
@@ -48,7 +51,7 @@ struct SignUpView: View {
                 VStack(alignment: .leading) {
                     Text("LAST NAME")
                         .fontWeight(.bold)
-                    TextField("", text: $email)
+                    TextField("", text: $lastName)
                         .font(.system(size: 12))
                         .fontWeight(.none)
                         .frame(height: 30)
@@ -70,21 +73,16 @@ struct SignUpView: View {
                 }
                 
                 VStack(alignment: .leading) {
-                    Text("DATE OF BIRTH")
-                        .fontWeight(.bold)
-                    TextField("", text: $email)
-                        .font(.system(size: 12))
-                        .fontWeight(.none)
-                        .frame(height: 30)
-                        .padding(5)
-                        .border(.black)
-                        .clipShape(RoundedRectangle(cornerRadius: 2))
+                    DatePicker(selection: $dateOfBirth, label: {
+                        Text("DATE OF BIRTH")
+                            .fontWeight(.bold)
+                    })
                 }
                 
                 VStack(alignment: .leading) {
                     Text("PASSWORD")
                         .fontWeight(.bold)
-                    TextField("", text: $email)
+                    SecureField("", text: $password)
                         .font(.system(size: 12))
                         .fontWeight(.none)
                         .frame(height: 30)
